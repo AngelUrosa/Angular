@@ -10,14 +10,23 @@ export class Ej05ArrayComponent implements OnInit {
   apellido: string ="";
   resultado: string ="";
 
-  personas:array[] = [];
+  personas:string [] = [];
 
-  constructor() { }
+  constructor() { 
+
+
+    
+  }
 
   ngOnInit(): void {
   }
   une(): void {
     //this.resultado=this.nombre +' '+ this.apellido
-    this.resultado=`${this.nombre} ${this.apellido}`;
+
+
+      this.personas[0]=`${this.nombre} ${this.apellido}`;
+      
+    
+    
   }
 }

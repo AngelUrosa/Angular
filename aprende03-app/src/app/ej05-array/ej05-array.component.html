@@ -11,6 +11,17 @@
 
     <button class="btn btn-primary" type="submit">Sumar</button>
 
+    <table>
+    <tbody>
+        <tr *ngFor="letnombre of nombres; let i = index">
+            <td>{{ i+1 }}</td>
+            <td>{{ nombre }}</td>
+            <td><button (click)="borrarFila(i)" class="btn btn-danger">Borrar</button></td>
+        </tr>
+    </tbody>
+</table>
     <p class="alert alert-warning">{{resultado}}</p>
+
+    
 </form>
 </div>

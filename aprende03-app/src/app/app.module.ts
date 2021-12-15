@@ -8,6 +8,9 @@ import { Ej02ConcatenaComponent } from './components/ej02-concatena/ej02-concate
 import { Ej03ConcatenaComponent } from './components/ej03-concatena/ej03-concatena.component';
 import { Ej04ConcatenaComponent } from './ej04-concatena/ej04-concatena.component';
 import { Ej05ArrayComponent } from './ej05-array/ej05-array.component';
+import { Ej06BPadreComponent } from './ej06-b-padre/ej06-b-padre.component';
+import { Ej06BFormComponent } from './ej06-b-form/ej06-b-form.component';
+import { Ej06BListComponent } from './ej06-b-list/ej06-b-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { Ej05ArrayComponent } from './ej05-array/ej05-array.component';
     Ej02ConcatenaComponent,
     Ej03ConcatenaComponent,
     Ej04ConcatenaComponent,
-    Ej05ArrayComponent
+    Ej05ArrayComponent,
+    Ej06BPadreComponent,
+    Ej06BFormComponent,
+    Ej06BListComponent
   ],
   imports: [
     BrowserModule,
