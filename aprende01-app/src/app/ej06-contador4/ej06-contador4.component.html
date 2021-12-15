@@ -1,0 +1,31 @@
+<!--<div class="principal">
+
+    <p class="titulo">Contador 4</p>
+    <button type="button" class="btn" (click)="decrementa();"*ngIf="contador>0">-1</button>
+    {{contador}}
+    <button type="button" class="btn" (click)="incrementa();">+1</button>
+    <br>
+    
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<div class="principal">
+
+    <p class="titulo">Contador 4</p>
+    <button type="button" class="btn" (click)="decrementa();"*ngIf="contador>0; else decrementoDesactivado">-1</button>
+
+    <ng-template #decrementoDesactivado><button disabled>-1</button></ng-template> <!-- IMPORTANTE-->
+
+    {{contador}}
+    <button type="button" class="btn" (click)="incrementa();">+1</button>
+    <br>
+    
+</div>

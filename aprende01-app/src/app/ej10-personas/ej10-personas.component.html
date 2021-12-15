@@ -1,0 +1,14 @@
+<div class="principal">
+
+    <p class="titulo">Nombres3</p>
+    <table class="tabla">
+    <tr *ngFor="let persona of personas; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido1}}</td>
+        <td>{{persona.apellido2}}</td>
+        <td>{{persona.fechaNacimiento | date:"dd/MM/yyyy"}}</td>
+        <td><button (click)="borrarPersonas(i)">Borrar</button></td>
+    </tr>
+    </table>
+</div>
